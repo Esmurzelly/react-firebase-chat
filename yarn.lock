@@ -5240,7 +5240,7 @@
     "locate-path" "^6.0.0"
     "path-exists" "^4.0.0"
 
-"firebase@>= 9.0.0":
+"firebase@^9.16.0", "firebase@>= 9.0.0":
   "integrity" "sha512-nNLpDwJvfP3crRc6AjnHH46TAkFzk8zimNVMJfYRCwAf5amOSGyU8duuc3IsJF6dQGiYLSfzfr2tMCsQa+rhKQ=="
   "resolved" "https://registry.npmjs.org/firebase/-/firebase-9.16.0.tgz"
   "version" "9.16.0"
