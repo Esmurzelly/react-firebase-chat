@@ -10,8 +10,8 @@ import "firebase/compat/firestore";
 
 
 import {getAuth} from 'firebase/auth';
-import { initializeApp } from "firebase/app";
-import {getFirestore} from 'firebase/firestore';
+import { initializeApp, getApp, getApps } from "firebase/app";
+import {getFirestore, initializeFirestore} from 'firebase/firestore';
 // import { getAnalytics } from "firebase/analytics";
 
 
@@ -28,7 +28,9 @@ const app = initializeApp({
 export const Context = createContext(null);
 
 const auth = getAuth(app);
-const db = getFirestore(app)
+const db = initializeFirestore(app, {
+  experimentalForceLongPolling: true,
+});
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
